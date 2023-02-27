@@ -14,25 +14,21 @@
   </head>
   <body>
     <div class="container">
-      <img src="assets/moi.jpg" alt="Picture of Ronan MOREL">
-      <h1>Ronan MOREL</h1>
-      <p>Ingénieur dans le génie logiciel</p>
+      <div>
+        <input id="timestamp" value="0" />
+        <button id="setTimestamp" onclick="calculNow()">Set Timestamp NOW</button>
+        <!-- <button id="getTimestamp" onclick="fromInput()">Get Timestamp Input</button> -->
+      </div>
       <div class="buttons">
-        <a href="https://www.linkedin.com/in/morelronan" target="_blank" rel="noreferrer">
-          <button>LinkedIn</button>
-        </a>
-        <a href="https://github.com/ronronan" target="_blank" rel="noreferrer">
-          <button>Github</button>
-        </a>
-        <a href="https://twitter.com/ronronan21" target="_blank" rel="noreferrer">
-          <button>
-            Twitter
-          </button>
-        </a>
-        <a href="/tools.html">
-          <button>Outils</button>
+        <a href="/">
+          <button>Retour</button>
         </a>
       </div>
     </div>
   </body>
 </html>
+<script>
+  function calculNow() {
+    document.getElementById("timestamp").value = new Date().getTime();
+  }
+</script>

@@ -4,7 +4,6 @@ html{
 body{
   display: flex;
   justify-content: center;
-  align-items: center;
   height:100%;
   margin:0px;
   padding:0px;
@@ -13,11 +12,13 @@ body{
   font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-align: center;
 }
+@media screen and (min-width: 620px) {
+  body {
+    align-items: center;
+  }
+}
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: block;
 }
 .container img {
   width: 200px;
@@ -25,7 +26,6 @@ body{
   border-radius: 50%;
 }
 .container h1 {
-  height: 80px;
   font-weight: 800;
   text-align: center;
   line-height: 80px;
@@ -33,7 +33,6 @@ body{
   font-size: 56px;
 }
 .container p {
-  height: 80px;
   font-weight: 700;
   text-align: center;
   line-height: 80px;
@@ -60,4 +59,5 @@ body{
   transition: all 0.15s ease;
   cursor: pointer;
   width: 350px;
+  margin: 2px auto;
 }
