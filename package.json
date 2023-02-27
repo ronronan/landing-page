@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "rclone sync ./dist mys3:ronanmorel.fr --progress --s3-acl=public-read"
   },
   "devDependencies": {
     "vite": "^4.0.4"
