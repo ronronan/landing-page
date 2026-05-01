@@ -23,12 +23,12 @@ params:
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -38,6 +38,19 @@ params:
   showtoc: false
   tocopen: false
 
+  profileMode:
+    enabled: true
+    title: Bienvenue sur mon blog
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
   socialIcons:
-    - name: github
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/morelronan/"
+    - name: "github"
       url: "https://github.com/ronronan"
+    - name: "gitlab"
+      url: "https://gitlab.com/ronronan"
